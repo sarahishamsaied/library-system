@@ -1,5 +1,5 @@
 # Library System
-A web app that's created using ReactJs Library & Firebase Database
+A web app that is developed using ReactJs Library & Firebase Database
 ## Tools & Dependencies
 1 - Firebase
 
