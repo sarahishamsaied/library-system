@@ -7,7 +7,10 @@
   align-items: center;
   height: 100vh;
 } */
-
+body{
+  background-image: url("../src/Images/6030496.jpg");
+  background-size: cover;
+}
 .box {
   border: 1px solid #dfdfdf;
   background-color: #fff;
@@ -23,4 +26,52 @@
 .g-btn > div > svg {
   width: 40px !important;
   height: 38px !important;
+}
+.navbarComp{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.addBookForm{
+  background-image: url("../src/Images/6030496.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  box-shadow: 0 18px 18px black;
+}
+.booksTable{
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+  flex-direction: column;
+}
+.refreshButton{
+  transition: all .3s ease;
+  padding: 3px;
+}
+.refreshButton:hover{
+background-color: #bbbaba;
+border-radius: 3px;
+}
+.bg-custom{
+  background-color: rgba(218, 218, 218, 0.952);
+  box-shadow: 0 20px 30px rgb(34, 17, 34);
+
+}
+.heading{
+  width: 100%;
+  padding: 10px;
+  box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.425);
+  display: flex;
+  justify-content: space-around;
+}
+.cardContainer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }

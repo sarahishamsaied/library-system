@@ -36,8 +36,8 @@ export default function Login() {
         }
     }
   return (
-    <div>
-      <Form className='p-5 box' onSubmit={handleSubmit}>
+    <div className='vh-100 d-flex justify-content-center align-items-center flex-column'>
+      <Form className='p-5 box bg-transparent shadow-lg border-0 text-white' onSubmit={handleSubmit}>
           <h1>Sign in</h1>
           {errorMessage && <Alert variant = "danger">{errorMessage}</Alert>}
           <Form.Group className = "mb-3">
@@ -49,11 +49,11 @@ export default function Login() {
           <Button variant="primary" type="Submit" className = "mb-3 ">
               Log In
             </Button>
+            <Form.Group className = "bg-dark">
+            <GoogleButton className='g-btn mb-4 ' type = "dark" onClick={handleSignInWithGoogle}/>
+            </Form.Group>
       </Form>
-      <div>
-          <GoogleButton className='g-btn mb-4' type = "dark" onClick={handleSignInWithGoogle}/>
-      </div>
-      <div className='box p-3'>
+      <div className='box p-2 bg-transparent border-0 text-white'>
             <p>Don't have an account?  <span><Link to = "/signup">Sign up</Link></span></p>
             
       </div>

@@ -11,7 +11,9 @@ import { auth } from "../Firebase";
 const UserAuthContext = createContext()
 export function UserAuthContextProvider({children}){
     const [user,setUser] = useState({})
+    const [noOfUsers,setNoOfUsers] = useState(0)
     function signUp(email,password){
+        setNoOfUsers(noOfUsers+1)
         return createUserWithEmailAndPassword(auth,email,password)
     }
     function signIn(email,password){

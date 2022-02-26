@@ -6,7 +6,9 @@ export default function WelcomePage() {
       <Container>
           <Row>
               <Col>
+              <h1>Heloooooooooo</h1>
               <h1>Welcome to Projectify</h1>
+
               </Col>
           </Row>
       </Container>
