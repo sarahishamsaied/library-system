@@ -1,4 +1,16 @@
 # Library System
+A web app that's created using ReactJs Library & Firebase Database
+## Tools & Dependencies
+1 - Firebase
+
+2 - ContextApi
+
+3 - react-router-dom
+
+4 - react-bootstrap
+
+5 - react-icons
+
 ## FEATURES 
 > 1 - ***User Authentication***
 > 
@@ -25,7 +37,7 @@
 > 
 > ![Screenshot (164)](https://user-images.githubusercontent.com/71923204/155845670-df477d21-6f3a-44ae-bdbc-c047c41d9728.png)
 > 
-> More features coming soon!
+> #                                                           More features coming soon!
 
 
 
