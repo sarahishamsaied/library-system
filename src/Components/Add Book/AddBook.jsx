@@ -59,7 +59,7 @@ export default class AddBook extends Component {
         {
             try
             {
-                await BookDataService.addBook(this.bookData);
+                await BookDataService.addBooks(this.bookData);
                 console.log("book added successfully")
                 this.setState({
                 errorMessage:'',
@@ -67,6 +67,7 @@ export default class AddBook extends Component {
                 })
             }
             catch(err){
+                console.log(err.message)
                 this.setState({
                     successMessage:'',
                     errorMessage:err.message

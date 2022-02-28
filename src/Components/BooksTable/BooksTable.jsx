@@ -5,16 +5,14 @@ import BookDataService from '../Services/Book.services'
 import * as BiIcons from 'react-icons/bi'
 import { getAuth } from 'firebase/auth'
 import { Navigate, useNavigate } from 'react-router-dom'
-import UpdateBook from '../UpdateBook/UpdateBook'
-import BookDataProvider, { BookCtx, useBookContext } from '../../Context/BookDataContext'
+// import BookDataProvider, { BookCtx, useBookContext } from '../../Context/BookDataContext'
 import { useContext } from 'react'
  function BooksTable() {
     const [books,setBooks] = useState([]);
-    let [requestUpdate,setRequestUpdate] = useState(false)
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     useEffect(()=>{
         getBooks();
-    },[])
+    },[]);
      const getBooks = async()=>{
      const data = await BookDataService.getAllBooks();
      console.log(data.docs);
@@ -22,9 +20,9 @@ import { useContext } from 'react'
      console.log(books)
     }
     const deleteHandler = async(id)=>{
-        await BookDataService.deleteBook(id)
-        getBooks()
-    }
+        await BookDataService.deleteBook(id);
+        getBooks();
+    };
     const UpdateHandler = (id)=>{
         navigate(`/updateBook/${id}`)
     }

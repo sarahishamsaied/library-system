@@ -17,7 +17,7 @@ import Error from './Components/Error/Error';
 import AddBook from './Components/Add Book/AddBook';
 import BooksTable from './Components/BooksTable/BooksTable';
 import UpdateBook from './Components/UpdateBook/UpdateBook';
-import BookDataProvider from './Context/BookDataContext';
+// import BookDataProvider from './Context/BookDataContext';
 import Dashboard from './Components/Dashboard/Dashboard';
 function App() {
   return (
@@ -26,7 +26,6 @@ function App() {
         <Row>
           <Col>
           <UserAuthContextProvider>
-            <BookDataProvider>
           <Routes>
           <Route exact path = "/" element = {<WelcomePage/>}/>
           <Route path = "/login" element = {<Login/>}/>
@@ -56,7 +55,6 @@ function App() {
           }/>
           </Routes>
           <NavBar/>
-          </BookDataProvider>
           </UserAuthContextProvider>
           </Col>
         </Row>
