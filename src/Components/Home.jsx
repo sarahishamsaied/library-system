@@ -35,15 +35,15 @@ export default function Home() {
 }
   return (
     <div className='mt-5 vh-100 d-flex align-items-start flex-column text-white text-left pt-5 '>
-      <div className="heading ">
+      <div className="heading bg-transparent bg-custom">
         <h3 >Welcome to Library Management System</h3>
         <h3>Hello, {username} </h3>
       </div>
       <div className="cardContainer mt-5">
       <div onClick={()=>navigate("/dashboard")}><Card cardTitle = "Dashboard" description="All library data" icon={<MdIcons.MdDashboard/>}/></div>
-      <Card cardTitle = "Cart" description="All books gathered in a cart" icon={<AiIcons.AiOutlineShoppingCart/>}/>
+      <div onClick={()=>navigate("/cart")}><Card cardTitle = "Cart" description="All books gathered in a cart" icon={<AiIcons.AiOutlineShoppingCart/>}/></div>
       <div onClick={()=>navigate("/booksTable")}><Card cardTitle = "Books Table" description="View all books" icon={<AiIcons.AiOutlineTable/>}/></div>
-      <Card cardTitle = "Purchase History" description="View all transactions" icon={<AiIcons.AiOutlineHistory/>}/>
+      <div onClick={()=>navigate("/booksSold")}><Card cardTitle = "Purchase History" description="View all transactions" icon={<AiIcons.AiOutlineHistory/>}/></div>
       <div onClick={()=>navigate("/addBook")}><Card cardTitle = "Add Book" description="Add book to the database" icon={<BiIcons.BiAlarmAdd />}/></div>
       <Card cardTitle = "Search" description="Search books in our database" icon={<GiIcons.GiArchiveResearch />}/>
       <div onClick={handleSignOut}><Card cardTitle = "Logout" description="Logout"  icon={<AiIcons.AiOutlineLogout/>}/></div>

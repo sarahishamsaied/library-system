@@ -1,22 +1,32 @@
+:root {
+    --lightPurpleGradientBackground: #f8ceec;
+    --lightPurpleGradientImg:linear-gradient(315deg, #f8ceec 0%, #a88beb 94%);
+  }
 *{
     box-sizing: border-box;
 }
 .card{
     width: 230px;
     height: 230px;
-    background-color: rgba(150, 150, 148, 0.356);
+    background-color: #ffffff15;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.233);
+    box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.466);
     transition: all .5s ease;
     margin-right: 20px;
     margin-top: 20px;
+    color: white;
+    /* background-color: var(--lightPurpleGradientBackground);
+    background-image: var(--lightPurpleGradientImg); */
+    
+
 }
 .card:hover{
-    background-color: rgba(255, 194, 242, 0.712);
+    background-color: #a17b97;
+    background-image: linear-gradient(315deg, #a3849a 0%, #564c6e 74%);
     box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.445);
     color: rgba(0, 0, 0, 0.637);
     cursor: pointer;

@@ -19,15 +19,24 @@ import BooksTable from './Components/BooksTable/BooksTable';
 import UpdateBook from './Components/UpdateBook/UpdateBook';
 // import BookDataProvider from './Context/BookDataContext';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Cart from './Components/Cart/Cart';
+import Checkout from './Components/Checkout';
+import BooksSold from './Components/BooksSold';
+import {useUserAuth} from '../src/Context/UserAuthContext'
+import Admins from './Components/Admins';
+import LoadingScreen from './Components/LoadingScreen';
 function App() {
+  const user = useUserAuth()
+  console.log(user)
   return (
     <div className="App">
       <Container>
         <Row>
           <Col>
+          <LoadingScreen/>
           <UserAuthContextProvider>
           <Routes>
-          <Route exact path = "/" element = {<WelcomePage/>}/>
+          <Route exact path = "/" element = {!user?<WelcomePage/>:<Home/>}/>
           <Route path = "/login" element = {<Login/>}/>
           <Route path = "/addBook" element = {        
           <ProtectedRoute>
@@ -36,6 +45,14 @@ function App() {
           <Route path = "/dashboard" element = {
             <ProtectedRoute>
               <Dashboard/>
+            </ProtectedRoute>}/>
+            <Route path = "/checkout" element = {
+            <ProtectedRoute>
+              <Checkout/>
+            </ProtectedRoute>}/>
+            <Route path = "/booksSold" element = {
+            <ProtectedRoute>
+              <BooksSold/>
             </ProtectedRoute>}/>
           <Route path = "/updateBook/:id" element = {        
           <ProtectedRoute>
@@ -51,6 +68,16 @@ function App() {
           <Route path = "/home" element = {
             <ProtectedRoute>
               <Home/>
+            </ProtectedRoute>
+          }/>
+          <Route path = "/cart" element = {
+            <ProtectedRoute>
+              <Cart/>
+            </ProtectedRoute>
+          }/>
+                    <Route path = "/admins" element = {
+            <ProtectedRoute>
+              <Admins/>
             </ProtectedRoute>
           }/>
           </Routes>

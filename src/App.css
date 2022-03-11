@@ -7,8 +7,15 @@
   align-items: center;
   height: 100vh;
 } */
+:root {
+  --lightPurpleGradientBackground: #f8ceec2f;
+  --lightPurpleGradientImg:linear-gradient(315deg, #f8ceec48 0%, #a88beb34 94%);
+}
+*{
+  box-sizing: border-box;
+}
 body{
-  background-image: url("../src/Images/6030496.jpg");
+  background-image: url("../src/Images/5172661.jpg");
   background-size: cover;
 }
 .box {
@@ -32,9 +39,12 @@ body{
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.493);
+
+
 }
 .addBookForm{
-  background-image: url("../src/Images/6030496.jpg");
+  background-image: url("../src/Images/5172661.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -59,19 +69,80 @@ background-color: #bbbaba;
 border-radius: 3px;
 }
 .bg-custom{
-  background-color: rgba(218, 218, 218, 0.952);
-  box-shadow: 0 20px 30px rgb(34, 17, 34);
-
+  background-color: rgba(20, 20, 20, 0.377);
+  box-shadow: 0 3rem 5rem rgb(5, 3, 5);
 }
 .heading{
   width: 100%;
-  padding: 10px;
-  box-shadow:0 1rem 3rem rgba(0, 0, 0, 0.425);
+  padding: 11px;
+  box-shadow:0 3rem 6rem rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.144);
+  /* background-image: var(--lightPurpleGradientImg); */
+  color: #ffffff;
 }
 .cardContainer{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+tr:hover{
+  background-color: rgba(2, 2, 2, 0.123);
+  color: white;
+}
+.cartCard{
+  width: 270px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.158);
+  color: rgb(255, 255, 255);
+  border-top: 4px solid #ffffff;
+  border-radius: 1px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cartButton:hover{
+  box-shadow: 0 10px 40px rgb(34, 17, 34);
+  background-color: #ebebeba1 !important;
+  color: black !important;
+
+}
+.continueToCheckOut{
+  transition: .5s ease all;
+
+}
+.continueToCheckOut:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+  box-shadow: 0 30px 40px rgb(34, 17, 34);
+
+}
+.booksPhotoContainer{
+  background-image: url("../src/Images/24212985.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.bg-gradient{
+  background-color: var(--lightPurpleGradientBackground);
+  background-image: var(--lightPurpleGradientImg);
+}
+.bg-gradient:hover{
+  background-color: #a181982f;
+  background-image:linear-gradient(315deg, #886c80d7 0%, #bdabe6b7 94%);
+}
+.loadingScreen{
+  color: white;
 }
