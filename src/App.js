@@ -33,7 +33,6 @@ function App() {
       <Container>
         <Row>
           <Col>
-          <LoadingScreen/>
           <UserAuthContextProvider>
           <Routes>
           <Route exact path = "/" element = {!user?<WelcomePage/>:<Home/>}/>

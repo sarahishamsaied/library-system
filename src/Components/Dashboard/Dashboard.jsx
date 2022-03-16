@@ -4,6 +4,11 @@ import { useEffect } from 'react'
 import Card from '../Card/Card'
 import DashboardServices from '../Services/DashboardServices'
 import { useNavigate } from 'react-router-dom'
+import LoadingScreen from '../LoadingScreen'
+import * as MdIcons from 'react-icons/md'
+import * as FiIcons from 'react-icons/fi'
+import * as RiIcons from 'react-icons/ri'
+
 export default function Dashboard() {
   let [totalBalance,setTotalBalance] = useState(0)
   let [dashboardId,setDashboardId] = useState("")
@@ -42,18 +47,20 @@ export default function Dashboard() {
   useEffect(()=>{
     setTotalBalance(getTotalBalance)
   })
-  return <Fragment>
+     return( !isLoaded?<LoadingScreen/>:<Fragment>
       <div className="conatiner vh-100 d-flex justify-content-flex-start mt-5 text-white flex-column">
         <div className='DashboardHeader d-flex justify-content-between heading mt-5 px-5'>
         <h1 className=''>Admin Dashboard </h1>
         <h1 className='ml-auto'>Total Balance: {totalBalance}$</h1>
         </div>
       <div className="cards d-flex">
-      <div onClick={()=>navigate("/booksSold")}><Card cardTitle = "Books Sold" description={`Sells: ${sellsLength}`}/></div>
-      <div onClick={()=>navigate("/admins")}><Card cardTitle = "Admins" description={`Admins: ${adminsNumber}`}/></div>
-      <Card cardTitle = "Books Retrieved" description={"Books: 0"}/>
-      <Card cardTitle="Popular Books" description={"Most bought books"}/>
+      <div onClick={()=>navigate("/booksSold")}><Card cardTitle = "Books Sold" description={`Sells: ${sellsLength}`} icon = {<MdIcons.MdAttachMoney/>}/></div>
+      <div onClick={()=>navigate("/admins")}><Card cardTitle = "Admins" description={`Admins: ${adminsNumber}`} icon = {<FiIcons.FiUsers/>}/></div>
+      <Card cardTitle = "Books Retrieved" description={"Books: 0"} icon = {<RiIcons.RiExchangeLine/>}/>
+      <Card cardTitle="Popular Books" description={"Most bought books"} icon = {<MdIcons.MdTrendingUp/>}/>
       </div>
       </div>
-  </Fragment>
+  </Fragment>);
+
+  
 }
