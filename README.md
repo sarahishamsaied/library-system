@@ -11,33 +11,54 @@ A web app that is developed using ReactJs Library & Firebase Database
 
 5 - react-icons
 
-## FEATURES 
-> 1 - ***User Authentication***
-> 
-> ![Screenshot (161)](https://user-images.githubusercontent.com/71923204/155845730-00009791-71b9-4f2e-b2f5-ec3338c37433.png)
+# FEATURES 
 
-> 
-> ![Screenshot (162)](https://user-images.githubusercontent.com/71923204/155845735-e4c09e9d-af31-4834-b89e-1fd3160f4452.png)
+ # 1- Welcome Page
 
-> 
-> 2 - ***HOME PAGE***
-> 
-> ![Screenshot (163)](https://user-images.githubusercontent.com/71923204/155845514-4940247e-2d56-4c73-a075-2bdabef7f07d.png)
+![Screenshot 2022-03-18 031223](https://user-images.githubusercontent.com/71923204/159005093-dfea5758-cd95-4d91-ada5-7bda937d65db.png)
 
-> 3 - ***CRUD OPERATIONS***
-> 
->  1 - ***Adding Book***
->  
-> ![Screenshot 2022-02-26 154815](https://user-images.githubusercontent.com/71923204/155845613-347e9800-c2f6-4f89-9fd7-32652331d464.png)
->  2 - ***Updating and Deleting***
->  
-> ![ezgif-1-c35e872422](https://user-images.githubusercontent.com/71923204/155845538-3394b43a-0c59-4f9b-81d8-6a7c8f9fcd67.gif)
-> 
-> 3 - ***After Updating***
-> 
-> ![Screenshot (164)](https://user-images.githubusercontent.com/71923204/155845670-df477d21-6f3a-44ae-bdbc-c047c41d9728.png)
-> 
-> #                                                           More features coming soon!
+ # 2 - User Authentication
+ 
+ ![Screenshot 2022-03-18 031340](https://user-images.githubusercontent.com/71923204/159005196-7ca62c3b-287d-4511-9517-37753861c1e4.png)
+ 
+ ![Screenshot 2022-03-18 031411](https://user-images.githubusercontent.com/71923204/159005267-ef4d3a2f-4b5e-4a61-bbda-c813c4e332e9.png)
+ 
+ # 3 - HOME PAGE
+ 
+ ![Screenshot 2022-03-18 144832](https://user-images.githubusercontent.com/71923204/159005740-e22854ca-29f2-4edd-b96f-2a022b6a21c7.png)
+
+ # 4 - CRUD OPERATIONS
+ 
+ 1 - ***Adding Book***
+ 
+  ![addBook](https://user-images.githubusercontent.com/71923204/159006250-2a36c871-efd0-4942-908e-f33ae2e41d13.png)
+
+  2 - ***Updating and Deleting***
+  
+  ![crud](https://user-images.githubusercontent.com/71923204/159006811-e74d6ebe-d1ed-4b35-b975-072515acb5c0.gif) 
+  
+  3 - ***View ALL Books***
+  
+  ![viewALLbOOKS](https://user-images.githubusercontent.com/71923204/159007476-2ed9b22a-cf8d-44ad-acd7-cf20347da3ac.png)
+   
+# 5 - Filter by Category
+
+![filter](https://user-images.githubusercontent.com/71923204/159007894-de936428-b868-4aba-a006-7c0845184a42.gif)
+
+# 6 - Cart 
+![Cart](https://user-images.githubusercontent.com/71923204/159009230-bdf60f74-b94e-4cbd-9fae-373cfbe97430.png)
+
+# 7 - Dashboard
+
+
+ Views purchase history and all registered admins in the system
+ 
+ 
+![dashboard](https://user-images.githubusercontent.com/71923204/159009196-e8017298-8f9c-4358-8e66-ead279e5bd45.gif)
+
+# 8 - Search
+
+![search](https://user-images.githubusercontent.com/71923204/159009798-77aaf153-88d3-4cf8-8c6f-30e03070a053.gif)
 
 
 
