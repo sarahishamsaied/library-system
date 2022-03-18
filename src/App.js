@@ -25,6 +25,7 @@ import BooksSold from './Components/BooksSold';
 import {useUserAuth} from '../src/Context/UserAuthContext'
 import Admins from './Components/Admins';
 import LoadingScreen from './Components/LoadingScreen';
+import Search from './Components/Search/Search';
 function App() {
   const user = useUserAuth()
   console.log(user)
@@ -56,6 +57,10 @@ function App() {
           <Route path = "/updateBook/:id" element = {        
           <ProtectedRoute>
             <UpdateBook/>
+          </ProtectedRoute>}/>
+          <Route path = "/search" element = {        
+          <ProtectedRoute>
+            <Search/>
           </ProtectedRoute>}/>
           <Route path = "/booksTable" element = {        
           <ProtectedRoute>

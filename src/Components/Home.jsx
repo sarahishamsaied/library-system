@@ -45,7 +45,7 @@ export default function Home() {
       <div onClick={()=>navigate("/booksTable")}><Card cardTitle = "Books Table" description="View all books" icon={<AiIcons.AiOutlineTable/>}/></div>
       <div onClick={()=>navigate("/booksSold")}><Card cardTitle = "Purchase History" description="View all transactions" icon={<AiIcons.AiOutlineHistory/>}/></div>
       <div onClick={()=>navigate("/addBook")}><Card cardTitle = "Add Book" description="Add book to the database" icon={<BiIcons.BiAlarmAdd />}/></div>
-      <Card cardTitle = "Search" description="Search books in our database" icon={<GiIcons.GiArchiveResearch />}/>
+      <div onClick={()=>navigate("/search")}><Card cardTitle = "Search" description="Search books in our database" icon={<GiIcons.GiArchiveResearch />}/></div>
       <div onClick={handleSignOut}><Card cardTitle = "Logout" description="Logout"  icon={<AiIcons.AiOutlineLogout/>}/></div>
       </div>
       {/* <Button variant = "primary" onClick={handleSignOut}>Sign Out</Button> */}

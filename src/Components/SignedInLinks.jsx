@@ -18,7 +18,7 @@ export default function SignedInLinks() {
       return <Nav className="me-auto">
     <Nav.Link href = "/home"><AiIcons.AiFillHome/> Home</Nav.Link>
   <Nav.Link href="/addBook"><GiIcons.GiWhiteBook/> Add</Nav.Link>
-  <Nav.Link href="#"><AiIcons.AiOutlineSearch/> Search</Nav.Link>
+  <Nav.Link href="/search"><AiIcons.AiOutlineSearch/> Search</Nav.Link>
   <Nav.Link href="/booksTable"><AiIcons.AiFillRead/> View Books</Nav.Link>
   <Nav.Link href="/cart"><AiIcons.AiOutlineShoppingCart/> Cart</Nav.Link>
   <Nav.Link href="#" onClick={handleSignOut}><AiIcons.AiOutlineLogout/> Signout</Nav.Link>
