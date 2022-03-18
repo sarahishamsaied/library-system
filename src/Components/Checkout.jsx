@@ -52,12 +52,6 @@ export default function Checkout({cartItems,totalAmount,isSold}) {
             <Form.Control placeholder='Buyer name' onChange={(e)=>setBuyerName(e.target.value)}/>
             </Form.Group>
                   </Col>
-                <Col>
-                <Form.Group>
-            <Form.Label>Amount Payed: </Form.Label>
-            <Form.Control placeholder='Paid amount'/>
-            </Form.Group>
-                </Col>
                 <Col className='d-flex col-2 pt-4 justify-content-center align-items-center'>
                     <Form.Group >
                     <Button type='submit'>Sell Item(s)</Button>

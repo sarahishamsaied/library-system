@@ -14,7 +14,6 @@ export default function CartCard({cardTitle,price,quantity,cat,cardId}) {
       <div className="cartCard bg-custom">
         <p className={cardTitle.length<19?' text-center mt-4 h5':'text-center  mt-4 fw-bold h5'}>{cardTitle}</p>
         <p className=' fw-light mt-4'>Price: {price}$</p>
-        <p className=' fw-light'>Quantity: x{quantity}</p>
         <p className=' fw-light'>Category: {cat}</p>
         <div className="buttons row justify-content-around w-100 align-items-center ">
         <Button className='bg-transparent w-25 border-0 bg-custom cartButton' onClick={deleteFromCart}><AiIcons.AiFillDelete/></Button>

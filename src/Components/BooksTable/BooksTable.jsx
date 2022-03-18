@@ -102,7 +102,6 @@ import * as BsIcons from 'react-icons/bs'
                    <td>{<Button variant = "primary" onClick={()=>UpdateHandler(val.id)}>Edit</Button>}</td>
                    <td>{<Button variant = "danger" onClick={()=>deleteHandler(val.id)}>Delete</Button>}</td>
                    <td ><Button variant = "primary" onClick={()=>addToCartHandler(val,val.id)}><BsIcons.BsFillCartPlusFill/></Button></td>
-
                </tr>
               })}
           </tbody>: <tbody>
